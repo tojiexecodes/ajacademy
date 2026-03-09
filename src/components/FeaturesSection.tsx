@@ -1,3 +1,4 @@
+import React from 'react';
 import { Award, Users, Lightbulb, Sparkles } from "lucide-react";
 
 const features = [
@@ -25,37 +26,43 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="relative py-32 bg-[#121a73] text-white overflow-hidden border-t border-white/10">
+    <section className="relative py-20 md:py-32 bg-[#121a73] text-white overflow-hidden border-t border-white/10">
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         
         {/* Header: Clean & Institutional */}
-        <div className="max-w-3xl mb-24">
-          <div className="flex items-center gap-3 mb-6">
+        <div className="max-w-3xl mb-16 md:mb-24">
+          <div className="flex items-center gap-3 mb-4 md:mb-6">
             <div className="h-[1px] w-8 bg-white/40" />
-            <span className="text-[10px] uppercase tracking-[0.5em] text-white/60 font-bold">
+            <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.5em] text-white/60 font-bold">
               Why AJ Academy
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-light tracking-tight leading-[1.1]">
+          <h2 className="text-3xl md:text-6xl font-light tracking-tight leading-[1.1]">
             The AJ <span className="font-bold italic">Advantage</span>
           </h2>
         </div>
 
-        {/* Features Grid: Sharp Divider System */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 border-t border-l border-white/10">
+        {/* Features Grid: Responsive Divider System */}
+        {/* Removed the parent borders on mobile to prevent layout shift */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t md:border-l border-white/10">
           {features.map((feature, idx) => (
             <div 
               key={idx} 
-              className="p-10 border-r border-b border-white/10 bg-white/[0.02]"
+              className={`
+                p-8 md:p-10 
+                border-b border-r border-white/10 
+                ${idx % 2 === 0 ? 'border-l md:border-l-0' : 'border-l md:border-l-0'} 
+                bg-white/[0.02]
+              `}
             >
               {/* Icon: Refined & Static */}
-              <div className="mb-16">
+              <div className="mb-10 md:mb-16">
                 <feature.icon className="w-5 h-5 text-white/80" strokeWidth={1.5} />
               </div>
 
-              <div className="space-y-6">
-                <h3 className="text-xl font-medium tracking-tight">
+              <div className="space-y-4 md:space-y-6">
+                <h3 className="text-lg md:text-xl font-medium tracking-tight">
                   {feature.title}
                 </h3>
                 
@@ -65,8 +72,8 @@ const FeaturesSection = () => {
               </div>
 
               {/* Decorative Label */}
-              <div className="mt-16 flex items-center justify-between">
-                <span className="text-[9px] font-bold tracking-[0.4em] text-white/20 uppercase">
+              <div className="mt-10 md:mt-16 flex items-center justify-between">
+                <span className="text-[8px] md:text-[9px] font-bold tracking-[0.4em] text-white/20 uppercase">
                   Module 0{idx + 1}
                 </span>
                 <div className="w-4 h-[1px] bg-white/20" />
