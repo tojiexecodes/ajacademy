@@ -33,36 +33,36 @@ const FeaturesSection = () => {
         {/* Header: Clean & Institutional */}
         <div className="max-w-3xl mb-16 md:mb-24">
           <div className="flex items-center gap-3 mb-4 md:mb-6">
-            <div className="h-[1px] w-8 bg-white/40" />
-            <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.5em] text-white/60 font-bold">
+            <div className="h-[1px] w-8 bg-orange-500/50" />
+            <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.5em] text-orange-500/70 font-bold">
               Why AJ Academy
             </span>
           </div>
           <h2 className="text-3xl md:text-6xl font-light tracking-tight leading-[1.1]">
-            The AJ <span className="font-bold italic">Advantage</span>
+            The AJ <span className="font-bold italic text-orange-500">Advantage</span>
           </h2>
         </div>
 
         {/* Features Grid: Responsive Divider System */}
-        {/* Removed the parent borders on mobile to prevent layout shift */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t md:border-l border-white/10">
           {features.map((feature, idx) => (
             <div 
               key={idx} 
               className={`
+                group
                 p-8 md:p-10 
                 border-b border-r border-white/10 
-                ${idx % 2 === 0 ? 'border-l md:border-l-0' : 'border-l md:border-l-0'} 
-                bg-white/[0.02]
+                bg-white/[0.02] hover:bg-orange-500/[0.02]
+                transition-all duration-500
               `}
             >
-              {/* Icon: Refined & Static */}
+              {/* Icon: Now using Orange */}
               <div className="mb-10 md:mb-16">
-                <feature.icon className="w-5 h-5 text-white/80" strokeWidth={1.5} />
+                <feature.icon className="w-5 h-5 text-orange-500" strokeWidth={1.5} />
               </div>
 
               <div className="space-y-4 md:space-y-6">
-                <h3 className="text-lg md:text-xl font-medium tracking-tight">
+                <h3 className="text-lg md:text-xl font-medium tracking-tight group-hover:text-orange-500 transition-colors">
                   {feature.title}
                 </h3>
                 
@@ -73,10 +73,10 @@ const FeaturesSection = () => {
 
               {/* Decorative Label */}
               <div className="mt-10 md:mt-16 flex items-center justify-between">
-                <span className="text-[8px] md:text-[9px] font-bold tracking-[0.4em] text-white/20 uppercase">
+                <span className="text-[8px] md:text-[9px] font-bold tracking-[0.4em] text-white/20 uppercase group-hover:text-orange-500/40 transition-colors">
                   Module 0{idx + 1}
                 </span>
-                <div className="w-4 h-[1px] bg-white/20" />
+                <div className="w-4 h-[1px] bg-white/20 group-hover:bg-orange-500/40 transition-colors" />
               </div>
             </div>
           ))}

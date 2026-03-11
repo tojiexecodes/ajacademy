@@ -30,28 +30,28 @@ const HeroSection = () => {
               </div>
               <h2 className="text-4xl md:text-7xl text-white font-light tracking-tight leading-tight md:leading-none">
                 Integrity in <br />
-                <span className="font-bold italic opacity-90">Leadership.</span>
+                <span className="font-bold italic text-orange-500">Leadership.</span>
               </h2>
             </div>
 
             <p className="text-white/60 text-base md:text-xl leading-relaxed font-light max-w-lg border-l border-white/10 pl-6 md:pl-8">
               Founded by <span className="text-white font-medium">AJ</span>, 
               the academy offers a curriculum of distinction—integrating professional excellence with 
-              the precision of <span className="text-white">internal clarity.</span>
+              the precision of <span className="text-orange-500 font-medium">internal clarity.</span>
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-8 pt-4 md:pt-6">
               <button className="bg-white text-[#121a73] px-10 py-4 text-[10px] uppercase tracking-[0.4em] font-black hover:bg-white/90 transition-all text-center">
                 The Prospectus
               </button>
-              <button className="text-white/70 hover:text-white px-6 py-4 text-[10px] uppercase tracking-[0.4em] font-bold transition-all border border-white/10 text-center">
+              {/* Updated "Our Story" button to orange */}
+              <button className="text-orange-500 hover:text-orange-400 px-6 py-4 text-[10px] uppercase tracking-[0.4em] font-bold transition-all border border-orange-500/30 hover:border-orange-500/60 text-center">
                 Our Story
               </button>
             </div>
           </div>
 
           {/* Right: Massive Minimalist Title */}
-          {/* On mobile, we reduce the scale and adjust the order to sit above the narrative */}
           <div className="order-1 lg:order-2 lg:text-right select-none">
             <h1 className="font-bold text-[clamp(3.5rem,15vw,10rem)] leading-[0.85] tracking-tighter text-white">
               <span className="block opacity-10 lg:opacity-20">AJ</span>
@@ -65,7 +65,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Subtle Scroll Indicator - Hidden on very small screens to avoid clutter */}
+      {/* Subtle Scroll Indicator */}
       <div className="hidden sm:flex absolute bottom-12 left-6 lg:left-12 items-center gap-4 opacity-30 rotate-90 origin-left">
         <span className="text-[10px] uppercase tracking-[0.5em] text-white font-bold">Scroll</span>
         <div className="w-16 h-[1px] bg-white" />

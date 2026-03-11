@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="md:col-span-5 space-y-6 md:space-y-8">
             <div>
               <h3 className="text-xl md:text-2xl font-light tracking-tight mb-2">
-                AJ <span className="font-bold">ACADEMY</span>
+                AJ <span className="font-bold text-orange-500">ACADEMY</span>
               </h3>
-              <p className="text-[9px] md:text-[10px] tracking-[0.3em] md:tracking-[0.5em] uppercase text-white/40 font-bold leading-relaxed">
+              <p className="text-[9px] md:text-[10px] tracking-[0.3em] md:tracking-[0.5em] uppercase text-orange-500/50 font-bold leading-relaxed">
                 Leadership • Management • Public Policy
               </p>
             </div>
@@ -23,22 +23,23 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Contact & Location - Wrapped in a sub-grid for tablet/mobile efficiency */}
+          {/* Contact & Location */}
           <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-12 md:gap-8">
             
             {/* Contact Information */}
             <div className="space-y-6">
-              <h4 className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] text-white/90">Contact</h4>
+              <h4 className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] text-orange-500/80">Contact</h4>
               <div className="space-y-4 md:space-y-5 text-white/70 text-sm">
-                <div className="flex items-center gap-4">
-                  <div className="p-2 md:p-2.5 bg-white/5 border border-white/10">
-                    <Phone className="w-3.5 h-3.5 text-white/60" />
+                <div className="flex items-center gap-4 group cursor-pointer">
+                  {/* Icon Container: Orange border and icon on hover */}
+                  <div className="p-2 md:p-2.5 bg-white/5 border border-white/10 group-hover:border-orange-500/50 transition-colors">
+                    <Phone className="w-3.5 h-3.5 text-white/60 group-hover:text-orange-500 transition-colors" />
                   </div>
-                  <span className="font-light tracking-wide text-xs md:text-sm">+91 83000 84888</span>
+                  <span className="font-light tracking-wide text-xs md:text-sm group-hover:text-white transition-colors">+91 83000 84888</span>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="p-2 md:p-2.5 bg-white/5 border border-white/10">
-                    <Mail className="w-3.5 h-3.5 text-white/60" />
+                <div className="flex items-center gap-4 group">
+                  <div className="p-2 md:p-2.5 bg-white/5 border border-white/10 group-hover:border-orange-500/50 transition-colors">
+                    <Mail className="w-3.5 h-3.5 text-white/60 group-hover:text-orange-500 transition-colors" />
                   </div>
                   <a href="mailto:info@ajacademy.org" className="hover:text-white transition-colors font-light tracking-wide text-xs md:text-sm">
                     info@ajacademy.org
@@ -49,13 +50,13 @@ const Footer = () => {
 
             {/* Location Details */}
             <div className="space-y-6">
-              <h4 className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] text-white/90">Location</h4>
-              <div className="flex items-start gap-4 md:gap-5 text-white/70 text-sm">
-                <div className="p-2 md:p-2.5 bg-white/5 border border-white/10 mt-1">
-                  <MapPin className="w-3.5 h-3.5 text-white/60" />
+              <h4 className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] text-orange-500/80">Location</h4>
+              <div className="flex items-start gap-4 md:gap-5 text-white/70 text-sm group">
+                <div className="p-2 md:p-2.5 bg-white/5 border border-white/10 mt-1 group-hover:border-orange-500/50 transition-colors">
+                  <MapPin className="w-3.5 h-3.5 text-white/60 group-hover:text-orange-500 transition-colors" />
                 </div>
                 <div className="font-light leading-relaxed text-xs md:text-sm">
-                  <p className="text-white font-medium mb-1 tracking-wide">AJ Academy Campus</p>
+                  <p className="text-orange-500 font-medium mb-1 tracking-wide">AJ Academy Campus</p>
                   <p>Knowledge Park, Coimbatore</p>
                   <p>Tamil Nadu — 641114</p>
                 </div>
@@ -68,11 +69,11 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 md:mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-8">
           <div className="flex gap-6 md:gap-10 text-[9px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.4em] text-white/30">
-            <a href="#" className="hover:text-white transition-all">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-all">Terms of Use</a>
+            <a href="#" className="hover:text-orange-500 transition-all">Privacy Policy</a>
+            <a href="#" className="hover:text-orange-500 transition-all">Terms of Use</a>
           </div>
           <p className="text-white/20 text-[9px] md:text-[10px] uppercase tracking-[0.1em] md:tracking-[0.25em] font-medium">
-            © 2026 AJ Academy · Excellence in Leadership
+            © 2026 <span className="text-orange-500/30">AJ Academy</span> · Excellence in Leadership
           </p>
         </div>
       </div>
