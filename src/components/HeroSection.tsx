@@ -59,7 +59,7 @@ const HeroSection = () => {
           {/* Right: Massive Minimalist Title */}
           <div className="order-1 lg:order-2 lg:text-right select-none">
             <h1 className="font-bold text-[clamp(3.5rem,15vw,10rem)] leading-[0.85] tracking-tighter text-white">
-              <span className="block opacity-20 lg:opacity-40">AJ</span>
+              <span className="block opacity-60 lg:opacity-60">AJ</span>
               <span className="block tracking-[-0.05em]">ACADEMY</span>
             </h1>
             <div className="hidden lg:flex justify-end mt-4">
