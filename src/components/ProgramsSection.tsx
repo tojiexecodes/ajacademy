@@ -2,33 +2,33 @@ import { Button } from "@/components/ui/button";
 
 const programs = [
   {
-    status: "Registration OPEN",
-    title: "Brand Insight",
-    description: "Expand your business by leveraging the power of purposeful branding from the finest brand strategists.",
-    date: "27 FEB - 1 MAR 2026",
+    status: "Registration CLOSED",
+    title: "REAL ESTATE BUSINESS MASTERY",
+    description: "Most real estate agents don't own a business—they own a job. REBM is designed to bridge that gap, transforming high-performers into CEOs who command systems, people, and profits.",
+    date: "7 MAR - 8 MAR 2026",
   },
   {
     status: "Registration OPEN",
-    title: "Human Is Not A Resource",
-    description: "Explore practical steps to unleash the human potential in your organization by seeing human beings as possibilities.",
+    title: "Professional Sales Mastery",
+    description: "This isn't about scripts. It's about psychology. We teach you how to read the room, identify the triggers, and lead the prospect to a confident Yes.",
     date: "19 - 21 JUN 2026",
   },
   {
     status: "Coming Soon",
-    title: "Insight",
-    description: "Enhance your ability to 'see' and explore the science of scaling up your business through real-life case studies.",
+    title: "Professional Marketing Marketing Mastery",
+    description: "In a world of noise, attention is the new currency. PMM is designed to transform real estate professionals into local authorities by mastering digital ecosystems, lead generation, and the art of personal branding.",
     date: "26 - 29 NOV 2026",
   },
   {
     status: "Coming Soon",
-    title: "Enterprise Excellence",
-    description: "Embark on a transformative journey of crafting lasting success and a legacy beyond mere profitability.",
+    title: "Professional Team Building Leadership Mastery",
+    description: "The greatest ceiling in real estate is your own capacity. PTBM is the strategic blueprint for high-performers ready to recruit, develop, and lead high-performing teams while reclaiming their own time through effective delegation.",
     date: "18 - 21 DEC 2025",
   },
   {
     status: "Coming Soon",
-    title: "Entrepreneurship Bootcamp",
-    description: "A one-year blended program for an audacious generation committed to building an enterprise from the ground up.",
+    title: "Professional Public Speaking Speaking Mastery",
+    description: "The highest-paid professionals are those who can command a room. PPSM transforms you from an industry participant into a thought leader, unlocking the storytelling and presence required for keynote stages and dominant authority.",
     date: "15 AUG 2026 - 14 AUG 2027",
   },
 ];
